@@ -1,0 +1,80 @@
+header {
+  width: 100%;
+  background-color: #bf315f;
+  position: relative;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  padding:0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .avatar-mask {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    cursor: pointer;
+  }
+  .left-topbar-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 430px;
+    .img-logo {
+      max-width: 170px;
+    }
+    .content-search-input {
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+      border-radius: 5px;
+      padding-right: 8px;
+      margin-left: 16px;
+      transition: all 0.2s ease-in-out;
+      overflow:hidden;
+      &:hover {
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+      }
+      .icon-search {
+        color: #fff;
+        margin: 8px 0 0 10px;
+        opacity: 0.8;
+        font-size: 21px;
+        position: absolute;
+      }
+      input {
+        background-color: rgba($color: #ffffff, $alpha: 0);
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        height: 36px;
+        width: 100%;
+        margin-left: 40px;
+        color: #fff;
+        line-height: 55px;
+        &::placeholder {
+          color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+    .inner-left-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        svg {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .right-topbar-side {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.user-tab{
+  button{
+    width:100px;
+  }
+}

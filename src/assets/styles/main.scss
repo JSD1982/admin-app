@@ -1,0 +1,99 @@
+//base
+@import 'normalize.scss';
+
+//animates
+@import 'animate.scss';
+
+//components
+@import 'components/navbar.scss';
+@import 'components/header.scss';
+@import 'components/titlebar.scss';
+@import 'components/table.scss';
+@import 'components/card.scss';
+@import 'components/alert.scss';
+@import 'components/selectDropdown.scss';
+
+//Global
+.page-main-inner{
+    padding:20px 10px;
+    margin-bottom:60px;
+}
+label{
+    color:#595959;
+}
+
+//Login page
+.login-container{
+    background-color:#BF315F;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.reset-zindex{z-index:1;}
+
+.datepicker-base, .input-base, .zindex-0{
+  z-index: 0;
+}
+.zindex-10{
+  z-index: 10;
+}
+.w-100 { width: 100% !important; }
+hr{
+  margin: 16px 0;
+  border: none;
+  border-top:solid 1px #ccc;  
+}
+
+
+//table
+.table-last-right{
+  td:last-child{
+    text-align:right;
+  }
+}
+button.icon-table-addin{
+  margin:0 6px;
+}
+
+//AddFormInput
+.content-input-add {
+  animation-name: animateFromInput;
+  animation-duration: 0.5s;
+}
+
+@keyframes animateFromInput {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.id-link{
+  color:#bf315f;
+}
+
+//base margins
+.typography-base, div{
+  &.mt-4{margin-top:4px;}
+  &.mt-8{margin-top:8px;}
+  &.mt-16{margin-top:16px;}
+  &.mt-32{margin-top:32px;}
+
+  &.mb-4{margin-bottom:4px;}
+  &.mb-8{margin-bottom:8px;}
+  &.mb-16{margin-bottom:16px;}
+  &.mb-32{margin-bottom:32px;}
+
+  &.mr-4{margin-right:4px;}
+  &.mr-8{margin-right:8px;}
+  &.mr-16{margin-right:16px;}
+  &.mr-32{margin-right:32px;}
+
+  &.ml-4{margin-left:4px;}
+  &.ml-8{margin-left:8px;}
+  &.ml-16{margin-left:16px;}
+  &.ml-32{margin-left:32px;}
+}

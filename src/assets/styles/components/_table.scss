@@ -1,0 +1,20 @@
+.Table{
+    .promotion-data{
+        th:nth-child(7) div{
+            float: right;
+        }
+    }
+    .promotion-data-detail{
+        th:nth-child(3) div{
+            float: right; 
+        }
+    }
+    .payment-data{
+        th:nth-child(2) span{
+            float: right; 
+        }
+        th:nth-child(8) span{
+            float: right; 
+        }
+    }
+}
